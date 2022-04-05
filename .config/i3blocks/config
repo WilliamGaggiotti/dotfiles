@@ -16,17 +16,21 @@ color=#eeeeee
 command= ~/.config/i3blocks/cpu_usage
 interval=10
 LABEL=CPU 
+markup=pango
 min_width=CPU: 100.00%
 T_WARN=50
 T_CRIT=80
+color=##ffb52a
 DECIMALS=2
-COLOR_NORMAL=#EBDBB2
+COLOR_NORMAL=#ffb52a
 COLOR_WARN=#FFFC00
 COLOR_CRIT=#FF0000
 
 [memory]
+color=#ffb52a
 command=~/.config/i3blocks/memory
 label=
+markup=pango
 interval=30
 T_WARN=50
 T_CRIT=80
@@ -36,8 +40,10 @@ COLOR_WARN=#FFFC00
 COLOR_CRIT=#FF0000
 
 [temperature]
+color=#ffb52a
 command=~/.config/i3blocks/temperature
 label=
+markup=pango
 interval=10
 
 #[bandwidth3]
@@ -46,12 +52,15 @@ interval=10
 #markup=pango
 
 [disk_nas]
+color=#ffb52a
 label=:
 instance=/nas
 interval=30
 command=~/.config/i3blocks/disk_usage
+markup=pango
 
 [battery2]
+color=#ffb52a
 command=~/.config/i3blocks/battery2
 markup=pango
 interval=30
@@ -60,6 +69,14 @@ interval=30
 command=~/.config/i3blocks/volume-pulseaudio
 interval=once
 signal=1
+color=#ffb52a
+markup=pango
+
+#[wifi]
+#command=~/.config/i3blocks/wifi
+#label=wifi:
+#INTERFACE=wlan0
+#interval=60
 
 [time]
 command=~/.config/i3blocks/time
@@ -68,5 +85,6 @@ interval=1
 STRFTIME_FORMAT= %H:%M 
 TZONES=$DEFAULT_TZ,Brazil/East,Australia/Brisbane,Asia/Calcutta
 TZ_LABELS=,Brazil,AU,Hyderabad
-
+color=#ffb52a
+markup=pango
 
