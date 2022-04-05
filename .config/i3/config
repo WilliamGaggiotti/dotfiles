@@ -192,5 +192,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec_always --no-startup-id feh --bg-fill ~/Imágenes/wallpaper.jpg
 exec_always --no-startup-id picom --config  ~/.confing/picom/picom.conf
-#exec_always --no-startup-id picom
-#exec_always --no-startup-id ~/.config/polybar/launch
+#exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+
